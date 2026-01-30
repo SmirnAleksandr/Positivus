@@ -1,0 +1,92 @@
+@use '../helpers' as *;
+
+.hero {
+    &__main {
+        padding-block: rem(70);
+        display: grid;
+        align-items: center;
+
+        @include tablet-above {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: rem(100);
+        }
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            row-gap: rem(15);
+            justify-content: center;
+            max-width: rem(531);
+            margin-inline: auto;
+        }
+
+        &-info {
+            display: grid;
+            max-width: rem(531);
+            row-gap: rem(35);
+
+            @include tablet {
+                display: contents;
+            }
+        }
+
+        &-title {
+            line-height: 1.4;
+
+            @include tablet {
+                order: -1;
+            }
+        }
+
+        &-description {
+            @include fluid-text(20, 16);
+        }
+
+        &-button {
+            @include tablet-above {
+                max-width: rem(264);
+            }
+
+            @include tablet {
+                max-width: rem(390);
+            }
+        }
+
+        &-image {
+            @include tablet {
+                order: -1;
+            }
+        }
+    }
+
+    &__partners {
+        &-list {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            column-gap: rem(35);
+
+            @include mobile {
+                grid-template-columns: repeat(3, 1fr);
+                row-gap: rem(20);
+            }
+        }
+
+        &-item {
+            @include mobile {
+                display: flex;
+                
+                &:nth-child(-n + 3) {
+                    justify-content: end;
+                }
+            }
+        }
+
+        &-image {
+            filter: grayscale(1);
+
+            @include mobile {
+                
+            }
+        }
+    }
+}

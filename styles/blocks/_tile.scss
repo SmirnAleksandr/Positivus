@@ -1,0 +1,11 @@
+@use '../helpers' as *;
+
+.tile {
+    background-color: var(--color-accent);
+    padding-inline: rem(7);
+    border-radius: rem(7);
+
+    &--light {
+        background-color: var(--color-light);
+    }
+}

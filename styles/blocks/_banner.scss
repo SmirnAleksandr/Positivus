@@ -1,0 +1,39 @@
+@use '../helpers' as *;
+
+.banner {
+    margin-top: fluid(100, 70);
+    padding-block: var(24);
+
+    &__inner {
+        background-color: var(--color-gray);
+        border-radius: rem(45);
+
+        @include tablet-above {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: rem(26);
+        padding: rem(60);
+
+        @include mobile {
+            padding: rem(50);
+        }
+    }
+
+    &__image {
+        @include tablet-above {
+            margin-block: rem(-24);
+            margin-inline: auto;
+        }
+
+        @include tablet {
+            display: none;
+        }
+    }
+}

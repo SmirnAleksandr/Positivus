@@ -1,0 +1,91 @@
+@use 'helpers' as *;
+
+html {
+    &.is-lock {
+        overflow: hidden;
+    }
+}
+
+body {
+    @include fluid-text(18, 16);
+
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-base);
+    font-weight: 400;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+}
+
+main {
+    flex-grow: 1;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    color: var(--color-dark);
+    font-weight: 500;
+}
+
+h1, .h1 {
+    @include fluid-text(60, 43);
+}
+
+h2, .h2 {
+    @include fluid-text(40, 36);
+}
+
+h3, .h3 {
+    @include fluid-text(30, 26);
+}
+
+h4, .h4 {
+    @include fluid-text(30, 18);
+}
+
+h5, .h5 {
+    @include fluid-text(20, 18);
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    color: inherit;
+
+    &[class] {
+        text-decoration: none;
+    }
+}
+
+:focus-visible {
+    outline: rem(2) dashed var(--color-dark);
+    outline-offset: rem(4);
+    transition-duration: 0s !important;
+}
+
+// расширяет кликабельную зону маленьких кнопок и ссылок имеющих атрибут aria-label
+a,
+button {
+    &[aria-label] {
+        position: relative;
+
+        &::before {
+            @include abs-center;
+            @include square(rem(44));
+
+            content: '';
+        }
+    }
+}

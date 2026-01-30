@@ -1,0 +1,22 @@
+@use '../helpers' as *;
+
+.section {
+    margin-top: fluid(140, 60);
+
+    &__header {
+        display: flex;
+        align-items: center;
+        column-gap: rem(40);
+        padding-bottom: fluid(80, 40);
+
+        @include mobile {
+            flex-direction: column;
+            text-align: center;
+            row-gap: rem(30);
+        }
+
+        &-description {
+            max-width: rem(580);
+        }
+    }
+}

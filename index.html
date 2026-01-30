@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positivus</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./scripts/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <header class="header" data-js-header>
+      <div class="header__inner container">
+        <a class="header__logo" href="/" aria-label="Logo" title="Logo">
+          <img
+            class="header__logo-image"
+            src="./images/logo_dark.svg"
+            width="220"
+            height="56"
+            alt="logo"
+          />
+        </a>
+        <div class="header__overlay" data-js-header-overlay>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="/">About us</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="/">Services</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="/">Use Cases</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="/">Pricing</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="/">Blog</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__button button button--transparent" href="/"
+            >Request a quote</a
+          >
+        </div>
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          aria-label="Open menu"
+          title="Open menu"
+          data-js-header-burger-button
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__inner container">
+          <div class="hero__main">
+            <div class="hero__main-info">
+              <h1 class="hero__main-title">
+                Navigating the digital landscape for success
+              </h1>
+              <div class="hero__main-description">
+                <p>
+                  Our digital marketing agency helps businesses grow and succeed
+                  online through a range of services including SEO, PPC, social
+                  media marketing, and content creation.
+                </p>
+              </div>
+              <a class="hero__main-button button" href="/"
+                >Book a consultation</a
+              >
+            </div>
+            <img
+              class="hero__main-image"
+              src="./images/hero/hero-bg.svg"
+              width="600"
+              height="515"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="hero__partners">
+            <h2 class="visually-hidden">Our partners</h2>
+            <ul class="hero__partners-list">
+              <li class="hero__partners-item">
+                <img
+                  class="hero__partners-image"
+                  src="./images/hero/1.svg"
+                  width="124"
+                  height="48"
+                  alt=""
+                  loading="lazy"
+                />
+              </li>
+              <li class="hero__partners-item">
+                <img
+                  class="hero__partners-image"
+                  src="./images/hero/2.svg"
+                  width="126"
+                  height="48"
+                  alt=""
+                  loading="lazy"
+                />
+              </li>
+              <li class="hero__partners-item">
+                <img
+                  class="hero__partners-image"
+                  src="./images/hero/3.svg"
+                  width="129"
+                  height="48"
+                  alt=""
+                  loading="lazy"
+                />
+              </li>
+              <li class="hero__partners-item">
+                <img
+                  class="hero__partners-image"
+                  src="./images/hero/4.svg"
+                  width="146"
+                  height="48"
+                  alt=""
+                  loading="lazy"
+                />
+              </li>
+              <li class="hero__partners-item">
+                <img
+                  class="hero__partners-image"
+                  src="./images/hero/5.svg"
+                  width="125"
+                  height="48"
+                  alt=""
+                  loading="lazy"
+                />
+              </li>
+              <li class="hero__partners-item">
+                <img
+                  class="hero__partners-image"
+                  src="./images/hero/6.svg"
+                  width="111"
+                  height="48"
+                  alt=""
+                  loading="lazy"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section container" aria-labelledby="services-title">
+        <header class="section__header">
+          <h2 class="section__header-title tile" id="services-title">
+            Services
+          </h2>
+          <div class="section__header-description">
+            <p>
+              At our digital marketing agency, we offer a range of services to
+              help businesses grow and succeed online. These services include:
+            </p>
+          </div>
+        </header>
+        <div class="section__body">
+          <div class="services">
+            <ul class="services__body-list grid grid--2-cols">
+              <li class="services__body-item">
+                <article class="service-card">
+                  <div class="service-card__info">
+                    <h3 class="service-card__title">
+                      <span class="tile">Search engine</span>
+                      <span class="tile">optimization</span>
+                    </h3>
+                    <a class="service-card__link" href="/">
+                      <span class="icon icon--top-right-accent">
+                        <span class="service-card__link--label">Learn more</span>
+                      </span>
+                    </a>
+                  </div>
+                  <img
+                    class="service-card__image"
+                    src="./images/services/1.svg"
+                    width="210"
+                    height="170"
+                    alt=""
+                    loading="lazy"
+                  />
+                </article>
+              </li>
+              <li class="services__body-item">
+                <article class="service-card">
+                  <div class="service-card__info">
+                    <h3 class="service-card__title">
+                      <span class="tile tile--light">Pay-per-click</span>
+                      <span class="tile tile--light">advertising</span>
+                    </h3>
+                    <a class="service-card__link" href="/">
+                      <span class="icon icon--top-right-accent">
+                        <span class="service-card__link--label">Learn more</span>
+                      </span>
+                    </a>
+                  </div>
+                  <img
+                    class="service-card__image"
+                    src="./images/services/2.svg"
+                    width="210"
+                    height="170"
+                    alt=""
+                    loading="lazy"
+                  />
+                </article>
+              </li>
+              <li class="services__body-item">
+                <article class="service-card">
+                  <div class="service-card__info">
+                    <h3 class="service-card__title">
+                      <span class="tile tile--light">Social Media</span>
+                      <span class="tile tile--light">Marketing</span>
+                    </h3>
+                    <a class="service-card__link" href="/">
+                      <span class="icon icon--top-right-black">
+                        <span class="service-card__link--label">Learn more</span>
+                      </span>
+                    </a>
+                  </div>
+                  <img
+                    class="service-card__image"
+                    src="./images/services/3.svg"
+                    width="210"
+                    height="170"
+                    alt=""
+                    loading="lazy"
+                  />
+                </article>
+              </li>
+              <li class="services__body-item">
+                <article class="service-card">
+                  <div class="service-card__info">
+                    <h3 class="service-card__title">
+                      <span class="tile">Email</span>
+                      <span class="tile">Marketing</span>
+                    </h3>
+                    <a class="service-card__link" href="/">
+                      <span class="icon icon--top-right-accent">
+                        <span class="service-card__link--label">Learn more</span>
+                      </span>
+                    </a>
+                  </div>
+                  <img
+                    class="service-card__image"
+                    src="./images/services/4.svg"
+                    width="210"
+                    height="170"
+                    alt=""
+                    loading="lazy"
+                  />
+                </article>
+              </li>
+              <li class="services__body-item">
+                <article class="service-card">
+                  <div class="service-card__info">
+                    <h3 class="service-card__title">
+                      <span class="tile tile--light">Content</span>
+                      <span class="tile tile--light">Creation</span>
+                    </h3>
+                    <a class="service-card__link" href="/">
+                      <span class="icon icon--top-right-accent">
+                        <span class="service-card__link--label">Learn more</span>
+                      </span>
+                    </a>
+                  </div>
+                  <img
+                    class="service-card__image"
+                    src="./images/services/5.svg"
+                    width="210"
+                    height="170"
+                    alt=""
+                    loading="lazy"
+                  />
+                </article>
+              </li>
+              <li class="services__body-item">
+                <article class="service-card">
+                  <div class="service-card__info">
+                    <h3 class="service-card__title">
+                      <span class="tile">Analytics and </span>
+                      <span class="tile">Tracking</span>
+                    </h3>
+                    <a class="service-card__link" href="/">
+                      <span class="icon icon--top-right-black">
+                        <span class="service-card__link--label">Learn more</span>
+                      </span>
+                    </a>
+                  </div>
+                  <img
+                    class="service-card__image"
+                    src="./images/services/6.svg"
+                    width="210"
+                    height="170"
+                    alt=""
+                    loading="lazy"
+                  />
+                </article>
+              </li>
+            </ul>
+          </div>
+          <div class="services__banner banner">
+            <div class="banner__inner">
+              <div class="banner__info">
+                <h3 class="banner__info-title">Let’s make things happen</h3>
+                <div class="banner__info-description">
+                  <p>
+                    Contact us today to learn more about how our digital
+                    marketing services can help your business grow and succeed
+                    online.
+                  </p>
+                </div>
+                <a class="banner__button button" href="/"
+                  >Get your proposal</a
+                >
+              </div>
+              <img
+                class="banner__image"
+                src="./images/services/7.svg"
+                width="359"
+                height="394"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section container" aria-labelledby="case-studies-title">
+        <header class="section__header">
+          <h2 class="section__header-title tile" id="case-studies-title">Case Studies</h2>
+          <div class="section__header-description">
+            <p>Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
+          </div>
+        </header>
+        <div class="section__body">
+          <div class="studies">
+            <ul class="studies__list">
+              <li class="studies__item">
+                <div class="studies__description">
+                  <p>For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.</p>
+                </div>
+                <a class="studies__link" href="/">
+                  <span class="studies__link-text">Learn more</span>
+                  <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.75 13.6956C0.0325611 14.1098 -0.213252 15.0272 0.200962 15.7446C0.615175 16.4621 1.53256 16.7079 2.25 16.2937L0.75 13.6956ZM20.2694 5.38286C20.4838 4.58266 20.0089 3.76015 19.2087 3.54574L6.16874 0.051683C5.36854 -0.16273 4.54603 0.312144 4.33162 1.11234C4.11721 1.91254 4.59208 2.73505 5.39228 2.94946L16.9834 6.05529L13.8776 17.6464C13.6631 18.4466 14.138 19.2691 14.9382 19.4835C15.7384 19.6979 16.5609 19.2231 16.7753 18.4229L20.2694 5.38286ZM2.25 16.2937L19.5705 6.29367L18.0705 3.69559L0.75 13.6956L2.25 16.2937Z" fill="#B9FF66"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="studies__item">
+                <div class="studies__description">
+                  <p>For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.</p>
+                </div>
+                <a class="studies__link" href="/">
+                  <span class="studies__link-text">Learn more</span>
+                  <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.75 13.6956C0.0325611 14.1098 -0.213252 15.0272 0.200962 15.7446C0.615175 16.4621 1.53256 16.7079 2.25 16.2937L0.75 13.6956ZM20.2694 5.38286C20.4838 4.58266 20.0089 3.76015 19.2087 3.54574L6.16874 0.051683C5.36854 -0.16273 4.54603 0.312144 4.33162 1.11234C4.11721 1.91254 4.59208 2.73505 5.39228 2.94946L16.9834 6.05529L13.8776 17.6464C13.6631 18.4466 14.138 19.2691 14.9382 19.4835C15.7384 19.6979 16.5609 19.2231 16.7753 18.4229L20.2694 5.38286ZM2.25 16.2937L19.5705 6.29367L18.0705 3.69559L0.75 13.6956L2.25 16.2937Z" fill="#B9FF66"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="studies__item">
+                <div class="studies__description">
+                  <p>For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.</p>
+                </div>
+                <a class="studies__link" href="/">
+                  <span class="studies__link-text">Learn more</span>
+                  <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.75 13.6956C0.0325611 14.1098 -0.213252 15.0272 0.200962 15.7446C0.615175 16.4621 1.53256 16.7079 2.25 16.2937L0.75 13.6956ZM20.2694 5.38286C20.4838 4.58266 20.0089 3.76015 19.2087 3.54574L6.16874 0.051683C5.36854 -0.16273 4.54603 0.312144 4.33162 1.11234C4.11721 1.91254 4.59208 2.73505 5.39228 2.94946L16.9834 6.05529L13.8776 17.6464C13.6631 18.4466 14.138 19.2691 14.9382 19.4835C15.7384 19.6979 16.5609 19.2231 16.7753 18.4229L20.2694 5.38286ZM2.25 16.2937L19.5705 6.29367L18.0705 3.69559L0.75 13.6956L2.25 16.2937Z" fill="#B9FF66"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section container" aria-labelledby="process-title">
+        <header class="section__header">
+          <h2 class="section__header-title tile" id="process-title">Our Working Process</h2>
+          <div class="section__header-description">
+            <p>Step-by-Step Guide to. Your Business Goals</p>
+          </div>
+        </header>
+        <div class="section__body">
+          <div class="process">
+            <ol class="process__list">
+              <li class="process__item">
+                <details class="process__accordion" open>
+                  <summary class="process__accordion-header">
+                    <h3 class="process__accordion-title">Consultation</h3>
+                    <span class="process__accordion-indicator"></span>
+                  </summary>
+                  <div class="process__accordion-body">
+                    <p>
+                      During the initial consultation, we will discuss your
+                      business goals and objectives, target audience, and
+                      current marketing efforts. This will allow us to
+                      understand your needs and tailor our services to best fit
+                      your requirements.
+                    </p>
+                  </div>
+                </details>
+              </li>
+              <li class="process__item">
+                <details class="process__accordion">
+                  <summary class="process__accordion-header">
+                    <h3 class="process__accordion-title">Research and Strategy Development</h3>
+                    <span class="process__accordion-indicator"></span>
+                  </summary>
+                  <div class="process__accordion-body">
+                    <p>
+                      During the initial consultation, we will discuss your
+                      business goals and objectives, target audience, and
+                      current marketing efforts. This will allow us to
+                      understand your needs and tailor our services to best fit
+                      your requirements.
+                    </p>
+                  </div>
+                </details>
+              </li>
+              <li class="process__item">
+                <details class="process__accordion">
+                  <summary class="process__accordion-header">
+                    <h3 class="process__accordion-title">Implementation</h3>
+                    <span class="process__accordion-indicator"></span>
+                  </summary>
+                  <div class="process__accordion-body">
+                    <p>
+                      During the initial consultation, we will discuss your
+                      business goals and objectives, target audience, and
+                      current marketing efforts. This will allow us to
+                      understand your needs and tailor our services to best fit
+                      your requirements.
+                    </p>
+                  </div>
+                </details>
+              </li>
+              <li class="process__item">
+                <details class="process__accordion">
+                  <summary class="process__accordion-header">
+                    <h3 class="process__accordion-title">Monitoring and Optimization</h3>
+                    <span class="process__accordion-indicator"></span>
+                  </summary>
+                  <div class="process__accordion-body">
+                    <p>
+                      During the initial consultation, we will discuss your
+                      business goals and objectives, target audience, and
+                      current marketing efforts. This will allow us to
+                      understand your needs and tailor our services to best fit
+                      your requirements.
+                    </p>
+                  </div>
+                </details>
+              </li>
+              <li class="process__item">
+                <details class="process__accordion">
+                  <summary class="process__accordion-header">
+                    <h3 class="process__accordion-title">Reporting and Communication</h3>
+                    <span class="process__accordion-indicator"></span>
+                  </summary>
+                  <div class="process__accordion-body">
+                    <p>
+                      During the initial consultation, we will discuss your
+                      business goals and objectives, target audience, and
+                      current marketing efforts. This will allow us to
+                      understand your needs and tailor our services to best fit
+                      your requirements.
+                    </p>
+                  </div>
+                </details>
+              </li>
+              <li class="process__item">
+                <details class="process__accordion">
+                  <summary class="process__accordion-header">
+                    <h3 class="process__accordion-title">Continual Improvement</h3>
+                    <span class="process__accordion-indicator"></span>
+                  </summary>
+                  <div class="process__accordion-body">
+                    <p>
+                      During the initial consultation, we will discuss your
+                      business goals and objectives, target audience, and
+                      current marketing efforts. This will allow us to
+                      understand your needs and tailor our services to best fit
+                      your requirements.
+                    </p>
+                  </div>
+                </details>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section class="section container" aria-labelledby="team-title">
+        <header class="section__header">
+          <h2 class="section__header-title tile" id="team-title">Team</h2>
+          <div class="section__header-description">
+            <p>Meet the skilled and experienced team behind our successful digital marketing strategies</p>
+          </div>
+        </header>
+        <div class="section__body">
+          <div class="team">
+            <ul class="team__list grid grid--3-cols">
+              <li class="team__item">
+                <article class="person-card">
+                  <div class="person-card__details">
+                    <img class="person-card__image" src="./images/person/1.png" width="103" height="103" alt="" loading="lazy">
+                    <div class="person-card__info">
+                      <p class="person-card__name h5">John Smith</p>
+                      <p class="person-card__department">CEO and Founder</p>
+                    </div>
+                    <span class="person-card__icon"></span>
+                  </div>
+                  <div class="person-card__experience">
+                    <p>10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
+                  </div>
+                </article>
+              </li>
+              <li class="team__item">
+                <article class="person-card">
+                  <div class="person-card__details">
+                    <img class="person-card__image" src="./images/person/2.png" width="103" height="103" alt="" loading="lazy">
+                    <div class="person-card__info">
+                      <p class="person-card__name h5">Jane Doe</p>
+                      <p class="person-card__department">Director of Operations</p>
+                    </div>
+                    <span class="person-card__icon"></span>
+                  </div>
+                  <div class="person-card__experience">
+                    <p>7+ years of experience in project management and team leadership. Strong organizational and communication skills</p>
+                  </div>
+                </article>
+              </li>
+              <li class="team__item">
+                <article class="person-card">
+                  <div class="person-card__details">
+                    <img class="person-card__image" src="./images/person/3.png" width="103" height="103" alt="" loading="lazy">
+                    <div class="person-card__info">
+                      <p class="person-card__name h5">Michael Brown</p>
+                      <p class="person-card__department">Senior SEO Specialist</p>
+                    </div>
+                    <span class="person-card__icon"></span>
+                  </div>
+                  <div class="person-card__experience">
+                    <p>5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization</p>
+                  </div>
+                </article>
+              </li>
+              <li class="team__item">
+                <article class="person-card">
+                  <div class="person-card__details">
+                    <img class="person-card__image" src="./images/person/4.png" width="103" height="103" alt="" loading="lazy">
+                    <div class="person-card__info">
+                      <p class="person-card__name h5">Emily Johnson</p>
+                      <p class="person-card__department">PPC Manager</p>
+                    </div>
+                    <span class="person-card__icon"></span>
+                  </div>
+                  <div class="person-card__experience">
+                    <p>3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis</p>
+                  </div>
+                </article>
+              </li>
+              <li class="team__item">
+                <article class="person-card">
+                  <div class="person-card__details">
+                    <img class="person-card__image" src="./images/person/5.png" width="103" height="103" alt="" loading="lazy">
+                    <div class="person-card__info">
+                      <p class="person-card__name h5">Brian Williams</p>
+                      <p class="person-card__department">Social Media Specialist</p>
+                    </div>
+                    <span class="person-card__icon"></span>
+                  </div>
+                  <div class="person-card__experience">
+                    <p>4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement</p>
+                  </div>
+                </article>
+              </li>
+              <li class="team__item">
+                <article class="person-card">
+                  <div class="person-card__details">
+                    <img class="person-card__image" src="./images/person/6.png" width="103" height="103" alt="" loading="lazy">
+                    <div class="person-card__info">
+                      <p class="person-card__name h5">Sarah Kim</p>
+                      <p class="person-card__department">Content Creator</p>
+                    </div>
+                    <span class="person-card__icon"></span>
+                  </div>
+                  <div class="person-card__experience">
+                    <p>2+ years of experience in writing and editing<br/>
+                    Skilled in creating compelling, SEO-optimized content for various industries</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <div class="team__link">
+              <a class="team__button button" href="/">See all team</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section container" aria-labelledby="contact-us-title">
+        <header class="section__header">
+          <h2 class="section__header-title tile" id="contact-us-title">Contact Us</h2>
+          <div class="section__header-description">
+            <p>Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
+          </div>
+        </header>
+        <div class="section__body">
+          <div class="contact-us">
+            <form class="contact-us__form">
+              <fieldset class="contact-us__request-types radios">
+                <legend class="radios__title visually-hidden">
+                  Request type
+                </legend>
+                <label class="radios__item radio">
+                  <input
+                    class="radio__input visually-hidden"
+                    name="request-type"
+                    type="radio"
+                    value="Say Hi"
+                    checked
+                  />
+                  <span class="radio__emulator"></span>
+                  <span class="radio__label">Say Hi</span>
+                </label>
+                <label class="radios__item radio">
+                  <input
+                    class="radio__input visually-hidden"
+                    name="request-type"
+                    type="radio"
+                    value="Get a Quote"
+                  />
+                  <span class="radio__emulator"></span>
+                  <span class="radio__label">Get a Quote</span>
+                </label>
+              </fieldset>
+              <div class="contact-us__body">
+                <div class="contact-us__field field">
+                  <label class="field__label" for="name">Name</label>
+                  <input
+                    class="field__input"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="contact-us__field field">
+                  <label class="field__label" for="email">Email*</label>
+                  <input
+                    class="field__input"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    type="email"
+                    required
+                  />
+                </div>
+                <div class="contact-us__field field">
+                  <label class="field__label" for="message">Message*</label>
+                  <textarea
+                    class="field__input field__input--textarea"
+                    id="message"
+                    name="message"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <button class="contact-us__button button" type="submit">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner container">
+        <div class="footer__wrapper">
+          <div class="footer__header">
+          <img class="footer__logo" src="./images/footer-logo.svg" width="180" height="29" alt="Positivus Logo" loading="lazy">
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">About us</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Services</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Use Cases</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Pricing</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Blog</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__soc1al soc1al">
+            <ul class="soc1al__list">
+              <li class="soc1al__item">
+                <a class="soc1al__link" href="/" target="_blank" aria-label="Linked In" title="Linked In">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="15" fill="white"/>
+                    <path d="M8.22178 22.0586H11.3059V12.0742H8.22178V22.0586Z" fill="black"/>
+                    <path d="M7.94141 8.88672C7.94141 9.87109 8.7358 10.668 9.76384 10.668C10.7451 10.668 11.5395 9.87109 11.5395 8.88672C11.5395 7.90234 10.7451 7.05859 9.76384 7.05859C8.7358 7.05859 7.94141 7.90234 7.94141 8.88672Z" fill="black"/>
+                    <path d="M19.8106 22.0586H22.9414V16.5742C22.9414 13.9023 22.3339 11.793 19.2031 11.793C17.7078 11.793 16.6797 12.6367 16.2592 13.4336H16.2124V12.0742H13.2685V22.0586H16.3526V17.1367C16.3526 15.8242 16.5863 14.5586 18.2218 14.5586C19.8106 14.5586 19.8106 16.0586 19.8106 17.1836V22.0586Z" fill="black"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc1al__item">
+                <a class="soc1al__link soc1al__link--white" href="/" target="_blank" aria-label="Facebook" title="Facebook">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 15.0913C30 6.75456 23.2863 0 15 0C6.71371 0 0 6.75456 0 15.0913C0 22.6369 5.44355 28.9047 12.6411 30V19.4726H8.83064V15.0913H12.6411V11.8053C12.6411 8.03245 14.879 5.90264 18.2661 5.90264C19.9597 5.90264 21.6532 6.2069 21.6532 6.2069V9.91886H19.7782C17.9032 9.91886 17.2984 11.0751 17.2984 12.2921V15.0913H21.4718L20.8065 19.4726H17.2984V30C24.496 28.9047 30 22.6369 30 15.0913Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc1al__item">
+                <a class="soc1al__link" href="/" target="_blank" aria-label="X" title="X">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="15" cy="15" r="15" fill="white"/>
+                    <path d="M21.9961 11.4915C22.6854 10.9745 23.3058 10.3541 23.7884 9.63028C23.168 9.90602 22.4442 10.1128 21.7204 10.1818C22.4786 9.73369 23.0301 9.04435 23.3058 8.18267C22.6165 8.59628 21.8238 8.90648 21.031 9.07881C20.3417 8.35501 19.4111 7.94141 18.3771 7.94141C16.378 7.94141 14.758 9.56135 14.758 11.5604C14.758 11.8362 14.7925 12.1119 14.8614 12.3876C11.8628 12.2153 9.1744 10.7677 7.38212 8.59628C7.07192 9.11328 6.89959 9.73369 6.89959 10.423C6.89959 11.6638 7.51999 12.7668 8.51953 13.4216C7.93359 13.3872 7.34766 13.2493 6.86512 12.9736V13.008C6.86512 14.7659 8.10593 16.2135 9.76034 16.5581C9.48461 16.6271 9.13994 16.696 8.82973 16.696C8.58847 16.696 8.38166 16.6615 8.1404 16.6271C8.58847 18.0747 9.93267 19.1087 11.5182 19.1432C10.2773 20.1082 8.72633 20.6942 7.03745 20.6942C6.72725 20.6942 6.45152 20.6597 6.17578 20.6252C7.76126 21.6592 9.65694 22.2452 11.725 22.2452C18.3771 22.2452 21.9961 16.7649 21.9961 11.974C21.9961 11.8017 21.9961 11.6638 21.9961 11.4915Z" fill="black"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__body">
+          <div class="footer__contacts">
+            <h2 class="footer__contacts-title h5 tile">Contact us:</h2>
+            <address class="footer__contacts-body">
+              <p>Email: <a href="mailto:info@positivus.com">info@positivus.com</a></p>
+              <p>Phone: <a href="tel:5555678901">555-567-8901</a></p>
+              <P>Address: 1234 Main St<br/>
+              Moonstone City, Stardust State 12345</P>
+            </address>
+          </div>
+          <form class="footer__form">
+            <div class="footer__form-inner">
+              <label class="visually-hidden" for="email">Email</label>
+              <input
+                class="footer__form-input"
+                id="email"
+                name="email"
+                placeholder="Email"
+                type="email"
+                required
+              />
+              <button class="footer__form-button button button--accent" type="submit">Subscribe to news</button>
+            </div>
+          </form>
+        </div>
+        <div class="footer__copyright">
+          <p>© 2023 Positivus. All Rights Reserved.</p>
+          <a href="/">Privacy Policy</a>
+        </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

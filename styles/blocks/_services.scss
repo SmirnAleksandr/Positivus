@@ -1,0 +1,27 @@
+@use '../helpers' as *;
+
+.services {
+    &__body-item {
+        &:nth-child(3n + 1) {
+            .service-card {
+                background-color: var(--color-gray);
+            }
+        }
+
+        &:nth-child(3n + 2) {
+            .service-card {
+                background-color: var(--color-accent);
+            }
+        }
+
+        &:nth-child(3n + 3) {
+            .service-card {
+                background-color: var(--color-dark-alt);
+            }
+
+            .service-card__link {
+                color: var(--color-light);
+            }
+        }
+    }
+}

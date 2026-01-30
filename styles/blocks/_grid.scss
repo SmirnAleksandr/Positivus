@@ -1,0 +1,25 @@
+@use '../helpers' as *;
+
+.grid {
+    display: grid;
+    gap: rem(40);
+
+    &--2-cols {
+        @include tablet-above {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &--3-cols {
+        grid-template-columns: repeat(3, 1fr);
+
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(1, 1fr);
+            gap: rem(30);
+        }
+    }
+}

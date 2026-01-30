@@ -1,0 +1,57 @@
+@use '../helpers' as *;
+
+.studies {
+    color: var(--color-light);
+
+    @include tablet-above {
+        background-color: var(--color-dark-alt);
+        border-radius: rem(45);
+        padding: rem(70) rem(60);
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        @include tablet {
+            flex-direction: column;
+            row-gap: rem(20);
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: rem(20);
+
+        @include tablet-above {
+            &:not(:first-child) {
+                padding-left: rem(64);
+            }
+
+            &:not(:last-child) {
+                border-right: rem(1) solid var(--color-light);
+                padding-right: rem(64);
+            }
+        }
+
+        @include tablet {
+            background-color: var(--color-dark-alt);
+            border-radius: rem(45);
+            padding: rem(42) rem(50);
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: rem(15);
+        color: var(--color-accent);
+        font-size: rem(20);
+
+        @include hover {
+            opacity: 60%;
+        }
+    }
+}

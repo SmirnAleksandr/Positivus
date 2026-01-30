@@ -1,0 +1,53 @@
+@use '../helpers' as *;
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: rem(5);
+
+    @include mobile {
+        row-gap: rem(10);
+    }
+
+    &__label {
+        @include fluid-text(16, 14);
+    }
+
+    &__input {
+        width: 100%;
+        height: rem(60);
+        padding-inline: rem(30);
+        color: var(--color-dark);
+        background-color: var(--color-light);
+        border: 1px solid var(--color-dark);
+        border-radius: rem(14);
+
+        @include hover {
+            background-color: var(--color-accent);
+        }
+
+        @include mobile {
+            padding-inline: rem(20);
+        }
+
+        &:focus {
+            border-color: var(--color-accent);
+            outline: none;
+        }
+
+        &::placeholder {
+            color: var(--color-gray-alt);
+        }
+
+        &--textarea {
+            height: rem(190);
+            padding-block: rem(18);
+            resize: none;
+
+            @include mobile {
+                height: rem(132);
+            }
+        }
+    }
+}

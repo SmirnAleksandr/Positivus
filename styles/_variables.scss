@@ -1,0 +1,22 @@
+@use 'helpers' as *;
+
+:root {
+    --color-light: #FFFFFF;
+    --color-dark: #000000;
+    --color-dark-alt: #191a23;
+    --color-gray: #f3f3f3;
+    --color-gray-alt: #898989;
+    --color-gray-alt-2: #292a32;
+    --color-accent: #b9ff66;
+
+    --border: #{rem(1)} solid var(--color-dark-alt);
+
+    --shadow: 0 5px 0 0 var(--color-dark-alt);
+
+    --font-family-base: 'Space Grotesk', sans-serif;
+
+    --container-width: #{rem(1240)};
+    --container-padding-x: #{rem(20)};
+
+    --transition-duration: 0.2s;
+}

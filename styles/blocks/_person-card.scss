@@ -1,0 +1,49 @@
+@use '../helpers' as *;
+
+.person-card {
+    height: 100%;
+    padding: rem(40) rem(35);
+    border: var(--border);
+    border-radius: rem(45);
+    box-shadow: var(--shadow);
+
+    @include mobile {
+        padding-inline: rem(50);
+    }
+
+    &__details {
+        position: relative;
+        display: flex;
+        align-items: end;
+        column-gap: rem(20);
+        padding-bottom: rem(28);
+        margin-bottom: rem(28);
+        border-bottom: var(--border);
+
+        @include mobile {
+            padding-bottom: rem(20);
+            margin-bottom: rem(20);
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: var(--color-accent);
+        font-weight: 500;
+        background-color: var(--color-dark);
+        border-radius: 50%;
+
+        @include square(rem(34));
+
+        &::before {
+            content: 'in';
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+    }
+}

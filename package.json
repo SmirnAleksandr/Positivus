@@ -1,0 +1,23 @@
+{
+  "name": "positivus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watch": "sass --watch ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmirnAleksandr/Positivus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmirnAleksandr/Positivus/issues"
+  },
+  "homepage": "https://github.com/SmirnAleksandr/Positivus#readme",
+  "devDependencies": {
+    "sass": "^1.97.3"
+  }
+}
